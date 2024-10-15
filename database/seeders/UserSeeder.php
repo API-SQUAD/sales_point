@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
             'telp' => '1234567890',
             'birthdate' => '1990-01-01',
             'region' => 'Jakarta',
-            'password' => Hash::make('12345678')
+            'password' => Hash::make('root123')
         ]);
 
         // Create roles

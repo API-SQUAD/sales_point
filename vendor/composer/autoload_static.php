@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit05e0b1a4504ec57f7d78485c4f0b042b
+class ComposerStaticInit7e97acc406208d2a2531fc6727ea3fcb
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -351,8 +351,8 @@ class ComposerStaticInit05e0b1a4504ec57f7d78485c4f0b042b
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -536,14 +536,20 @@ class ComposerStaticInit05e0b1a4504ec57f7d78485c4f0b042b
     public static $classMap = array (
         'App\\Helper\\Avatar' => __DIR__ . '/../..' . '/app/Helper/Avatar.php',
         'App\\Http\\Controllers\\Auth\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthController.php',
+        'App\\Http\\Controllers\\CatalogController' => __DIR__ . '/../..' . '/app/Http/Controllers/CatalogController.php',
         'App\\Http\\Controllers\\CompanyProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/CompanyProfileController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\Dashboard\\DashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/Dashboard/DashboardController.php',
         'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Requests\\Auth\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/LoginRequest.php',
+        'App\\Http\\Requests\\Catalog\\NewCatalogRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Catalog/NewCatalogRequest.php',
+        'App\\Http\\Requests\\Company\\NewCompanyProfileRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Company/NewCompanyProfileRequest.php',
         'App\\Http\\Requests\\User\\NewUserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/User/NewUserRequest.php',
         'App\\Http\\Requests\\User\\UpdateUserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/User/UpdateUserRequest.php',
+        'App\\Models\\Catalog' => __DIR__ . '/../..' . '/app/Models/Catalog.php',
+        'App\\Models\\CatalogFiles' => __DIR__ . '/../..' . '/app/Models/CatalogFiles.php',
         'App\\Models\\CompanyProfile' => __DIR__ . '/../..' . '/app/Models/CompanyProfile.php',
+        'App\\Models\\CompanyProfileFile' => __DIR__ . '/../..' . '/app/Models/CompanyProfileFile.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -6940,9 +6946,9 @@ class ComposerStaticInit05e0b1a4504ec57f7d78485c4f0b042b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit05e0b1a4504ec57f7d78485c4f0b042b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit05e0b1a4504ec57f7d78485c4f0b042b::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit05e0b1a4504ec57f7d78485c4f0b042b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7e97acc406208d2a2531fc6727ea3fcb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7e97acc406208d2a2531fc6727ea3fcb::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit7e97acc406208d2a2531fc6727ea3fcb::$classMap;
 
         }, null, ClassLoader::class);
     }
